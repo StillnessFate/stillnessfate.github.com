@@ -7,6 +7,10 @@
   src: url('../fonts/Stempel-Garamond-W01-Roman.woff') format('woff');
 }
 
+html, body {
+    height: 100%;
+}
+
 body, ul, table, form{
 	margin:0;
 	padding:0;
@@ -22,17 +26,16 @@ body, ul, table, form{
 	transition:margin-left 0.2s ease-in-out;
 }
 
-#frame{
-	height: 800px;
-	width: 100%;
+#frame {
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
     min-width: 960px;
-	
-	overflow:hidden;
-	position: relative;
-	background: url(../pics/splash-bg.jpg) bottom left repeat-x;
-	transition: height 1s;
-	
-	z-index: 0;
+    overflow: hidden;
+    position: relative;
+    background: url(../pics/splash-bg.jpg) bottom left repeat-x;
+    transition: height 1s;
+    z-index: 0;
 }
 
 #canvas{
